@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="ACMS">
+        <meta name="keywords" content="unica, creative, html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>ACMS</title>
+
+        <!-- Google Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/static/css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="/static/css/elegant-icons.css" type="text/css">
+        <link rel="stylesheet" href="/static/css/owl.carousel.min.css" type="text/css">
+        <link rel="stylesheet" href="/static/css/magnific-popup.css" type="text/css">
+        <link rel="stylesheet" href="/static/css/slicknav.min.css" type="text/css">
+        <link rel="stylesheet" href="/static/css/style.css" type="text/css">
+        <link rel="stylesheet" href="/static/css/login.css" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700'
+            rel='stylesheet' type='text/css'>
+
+    </head>
+
+    <body>
+        <!-- Page Preloder -->
+        <div id="preloder">
+            <div class="loader"></div>
+        </div>
+
+        <!-- Header Section Begin -->
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="header__logo">
+                            <a href="./index.html"><h2>ACMS</h2></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="header__nav__option">
+                            <nav class="header__nav__menu mobile-menu">
+                                <ul>
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./services.html">Services</a></li>
+                                    <li><a href="./help.html">Help</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                                    <li><a href="./Login.HTML" class="active">Login</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div id="mobile-menu-wrap"></div>
+            </div>
+        </header>
+        <!-- Header End -->
+
+        <!-- Breadcrumb Begin -->
+        <div class="breadcrumb-option spad set-bg"
+            data-setbg="/static/img/breadcrumb-bg.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="breadcrumb__text">
+                            <h2>Login</h2>
+                            <div class="breadcrumb__links">
+                                <a href="#">Home</a>
+                                <span>Login</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Breadcrumb End -->
+
+        <!-- GetDetails Container Start -->
+        <div class="getdetails">
+        <input class="form-styling" id="ipresult-container" type="text" name="email" placeholder="{{data.result}}"/>
+                        <marquee direction="left" bgcolor="white">Please provide your cellular IP Address, 
+                        if you are using wifi try to switch on cellular network. If you don't know your IP Address 
+                        please click on get IP Address button.
+                        </marquee>
+                        <button id="run-python-code-btn">Get IP Address</button>
+                        <input class="form-styling" id="macresult-container" type="text" name="email"
+                            placeholder=""/>
+                        <marquee direction="left" bgcolor="white">Please provide your primary device MAC Address.
+                         If you don't know your MAC Address 
+                        please click on get MAC Address button.
+                        </marquee>
+                        <button>Get MAC Address</button>
+        </div>
+        <!-- GetDetails Container End -->
+
+        <div class="container gautam">
+            <div class="frame">
+                <div class="nav">
+                    <ul class" links">
+                        <li class="signin-active"><a class="btn">Sign in</a></li>
+                        <li class="signup-inactive"><a class="btn">Sign up </a></li>
+                    </ul>
+                </div>
+                <div ng-app ng-init="checked= false">
+                    <form class="form-signin" action="" method="post"
+                        name="form">
+                        <label for="username">Username</label>
+                        <input class="form-styling" type="text" name="username"
+                            placeholder=""/>
+                        <label for="password">Password</label>
+                        <input class="form-styling" type="text" name="password"
+                            placeholder=""/>
+                        <input type="checkbox" id="checkbox"/>
+                        <label for="checkbox"><span class="ui"></span>Keep me
+                            signed in</label>
+                        <div class="btn-animate">
+                            <a class="btn-signin">Sign in</a>
+                        </div>
+                    </form>
+
+                    <form class="form-signup" action="" method="post"
+                        name="form">
+                        <label for="UIN">UIN</label>
+                        <input class="form-styling" type="text" name="UIN"
+                            placeholder=""/>
+                        <marquee direction="left" bgcolor="white">Please save
+                            this UIN for future reference.</marquee>
+                        <label for="fullname">Full name</label>
+                        <input class="form-styling" type="text" name="fullname"
+                            placeholder=""/>
+                        <label for="email">Email</label>
+                        <input class="form-styling" type="text" name="email"
+                            placeholder=""/>
+                        <label for="IP Address">IP Address</label>
+                        <input class="form-styling"  type="text" name="IP
+                            Address" required
+                            placeholder=""/>
+                        <marquee direction="left" bgcolor="white">Please provide your cellular IP Address, 
+                        if you are using wifi try to switch on cellular network. If you don't know your IP Address 
+                        please click on get IP Address button.
+                        </marquee>
+                        <button id="run-python-code-btn">Get IP Address</button>
+                        <label for="MAC Address">MAC Address</label>
+                        <input class="form-styling" type="text" name="MAC
+                            Address"
+                            placeholder=""/>
+                        <marquee direction="left" bgcolor="white">Please provide your primary device MAC Address.
+                         If you don't know your MAC Address 
+                        please click on get MAC Address button.
+                        </marquee>
+                        <button>Get MAC Address</button>
+                        <label for="password">Password</label>
+                        <input class="form-styling" type="text" name="password"
+                            placeholder=""/>
+                        <label for="confirmpassword">Confirm password</label>
+                        <input class="form-styling" type="text"
+                            name="confirmpassword" placeholder=""/>
+                        <a ng-click="checked= !checked" class="btn-signup">Sign
+                            Up</a>
+                    </form>
+
+                    <div class="success">
+                        <svg width="270" height="270"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px"
+                            viewBox="0 0 60 60" id="check" ng-class="checked ?
+                            'checked' : ''">
+                            <path fill="#ffffff"
+                                d="M40.61,23.03L26.67,36.97L13.495,23.788c-1.146-1.147-1.359-2.936-0.504-4.314
+                                c3.894-6.28,11.169-10.243,19.283-9.348c9.258,1.021,16.694,8.542,17.622,17.81c1.232,12.295-8.683,22.607-20.849,22.042
+                                c-9.9-0.46-18.128-8.344-18.972-18.218c-0.292-3.416,0.276-6.673,1.51-9.578"
+                                />
+                                <div class="successtext">
+                                    <p> Thanks for signing up! Check your email
+                                        for confirmation.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="forgot">
+                            <a href="#">Forgot your password?</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Footer Section Begin -->
+                <footer class="footer">
+                    <div class="container">
+                        <div class="footer__top">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="footer__top__logo">
+                                        <a href="#"><h2>ACMS</h2></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__option">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="footer__option__item">
+                                        <h5>About us</h5>
+                                        <p>We are a group of college students
+                                            who have
+                                            developed this software which
+                                            protects your
+                                            data from any fraudulent login
+                                            attempt or
+                                            from any cyber attacks.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="footer__option__item">
+                                        <h5>Newsletter</h5>
+                                        <p>Any Problems, Complains or
+                                            Suggestions please
+                                            feel free to contact us.
+                                        </p>
+                                        <form action="#">
+                                            <input type="text"
+                                                placeholder="Email">
+                                            <button type="submit"><i class="fa
+                                                    fa-send"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__copyright">
+                            <div class="row">
+                                <div class="col-lg-12 text-center">
+                                    <p class="footer__copyright__text">Copyright
+                                        &copy;
+                                        <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                                        All rights reserved | This Website is
+                                        made with
+                                        <i class="fa fa-heart-o"
+                                            aria-hidden="true"></i> by <a
+                                            href="#" target="_blank">ACMS</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer Section End -->
+
+                <!-- Js Plugins -->
+                <script>
+                    var button = document.getElementById("run-python-code-btn");
+                    var resultContainer = document.getElementById("ipresult-container");
+                
+                    button.addEventListener("click", function() {
+                        var xhr = new XMLHttpRequest();
+                        xhr.open("GET", "/run-python-code/", true);
+                        xhr.onload = function() {
+                            if (xhr.status === 200) {
+                                var data = JSON.parse(xhr.responseText);
+                                resultContainer.innerHTML = data.local_ip_address;
+                            }
+                        };
+                        xhr.send();
+                    });
+                </script>
+                <script src="https://cdn.jsdelivr.net/npm/jsonfile@6.1.0/utils.min.js"></script>
+                <script src="/static/js/jquery-3.3.1.min.js"></script>
+                <script src="/static/js/jquery.magnific-popup.min.js"></script>
+                <script src="/static/js/mixitup.min.js"></script>
+                <script src="/static/js/masonry.pkgd.min.js"></script>
+                <script src="/static/js/jquery.slicknav.js"></script>
+                <script src="/static/js/owl.carousel.min.js"></script>
+                <script src="/static/js/main.js"></script>
+            </body>
+
+        </html>
